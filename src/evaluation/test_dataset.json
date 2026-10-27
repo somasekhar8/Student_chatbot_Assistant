@@ -1,0 +1,78 @@
+{
+  "description": "Evaluation questions for src/evaluation/sample_docs/ml_basics.txt. Questions with answerable=false are NOT covered by the document: the correct behaviour is to say the information was not found.",
+  "documents": ["sample_docs/ml_basics.txt"],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is machine learning?",
+      "reference_answer": "Machine learning is a branch of artificial intelligence in which a computer learns patterns from data instead of following fixed rules written by a programmer.",
+      "answerable": true
+    },
+    {
+      "id": 2,
+      "question": "What are the three main types of machine learning?",
+      "reference_answer": "The three main types are supervised learning, unsupervised learning and reinforcement learning.",
+      "answerable": true
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between classification and regression?",
+      "reference_answer": "Classification predicts a category, such as spam or not spam, while regression predicts a number, such as a house price. Both are supervised learning tasks.",
+      "answerable": true
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of the validation set?",
+      "reference_answer": "The validation set is used to tune hyperparameters and to compare models.",
+      "answerable": true
+    },
+    {
+      "id": 5,
+      "question": "What is overfitting and how can it be reduced?",
+      "reference_answer": "Overfitting is when a model learns the training data too closely, including noise, so it does well on training data but poorly on new data. It can be reduced by collecting more data, using regularization, simplifying the model, using dropout, or stopping training early.",
+      "answerable": true
+    },
+    {
+      "id": 6,
+      "question": "What does the F1 score measure and when is it useful?",
+      "reference_answer": "The F1 score is the harmonic mean of precision and recall. It is useful when the classes are imbalanced.",
+      "answerable": true
+    },
+    {
+      "id": 7,
+      "question": "What happens if the learning rate in gradient descent is too large?",
+      "reference_answer": "Training can overshoot the minimum and fail to converge.",
+      "answerable": true
+    },
+    {
+      "id": 8,
+      "question": "How does k-fold cross-validation work?",
+      "reference_answer": "The data is split into k equal folds. The model is trained k times, each time using a different fold for validation and the rest for training, and the final score is the average of the k results.",
+      "answerable": true
+    },
+    {
+      "id": 9,
+      "question": "What is the difference between normalization and standardization?",
+      "reference_answer": "Normalization rescales values to a fixed range, usually 0 to 1, while standardization rescales values to have a mean of 0 and a standard deviation of 1.",
+      "answerable": true
+    },
+    {
+      "id": 10,
+      "question": "What is backpropagation used for?",
+      "reference_answer": "Backpropagation is the method used to compute the gradients that gradient descent needs to train a neural network.",
+      "answerable": true
+    },
+    {
+      "id": 11,
+      "question": "Which country won the 2018 FIFA World Cup?",
+      "reference_answer": "I could not find sufficient information in your uploaded documents.",
+      "answerable": false
+    },
+    {
+      "id": 12,
+      "question": "What is the recommended batch size for the Adam optimizer according to the notes?",
+      "reference_answer": "I could not find sufficient information in your uploaded documents.",
+      "answerable": false
+    }
+  ]
+}

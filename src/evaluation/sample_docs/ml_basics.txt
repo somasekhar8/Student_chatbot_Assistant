@@ -1,0 +1,31 @@
+Machine Learning Basics - Study Notes
+
+1. What is machine learning?
+Machine learning is a branch of artificial intelligence in which a computer learns patterns from data instead of being given fixed rules by a programmer. A machine learning model is trained on examples, and after training it can make predictions about new data it has never seen. For example, a spam filter learns from thousands of labelled emails and then decides whether a new email is spam.
+
+2. Types of machine learning
+There are three main types of machine learning.
+Supervised learning uses labelled data, which means every training example comes with the correct answer. The model learns to map inputs to outputs. Classification (predicting a category, such as spam or not spam) and regression (predicting a number, such as a house price) are the two main supervised tasks.
+Unsupervised learning uses data without labels. The model looks for structure by itself. Clustering, which groups similar items together, and dimensionality reduction, which reduces the number of features, are common unsupervised tasks.
+Reinforcement learning trains an agent that interacts with an environment. The agent receives rewards for good actions and penalties for bad actions, and it learns a policy that maximises the total reward over time. Game-playing programs and robots are typical examples.
+
+3. Training, validation and test data
+The available data is usually split into three parts. The training set is used to fit the model. The validation set is used to tune settings called hyperparameters and to compare models. The test set is used only once at the end to measure how well the final model works on unseen data. A common split is 70 percent training, 15 percent validation and 15 percent test. Using the test set during training is called data leakage and gives misleadingly good results.
+
+4. Overfitting and underfitting
+Overfitting happens when a model learns the training data too closely, including its noise, so it performs well on training data but poorly on new data. Underfitting happens when a model is too simple to capture the pattern, so it performs poorly on both training and new data. Ways to reduce overfitting include collecting more data, using regularization, simplifying the model, using dropout in neural networks, and stopping training early.
+
+5. Evaluation metrics for classification
+Accuracy is the fraction of all predictions that are correct. Precision is the fraction of predicted positives that are truly positive. Recall is the fraction of real positives that the model finds. The F1 score is the harmonic mean of precision and recall, and it is useful when the classes are imbalanced. For regression, a common metric is the mean squared error, which averages the squared differences between predictions and true values.
+
+6. Gradient descent
+Gradient descent is an optimization algorithm that trains a model by repeatedly moving its parameters in the direction that reduces the loss function. The learning rate controls the size of each step. If the learning rate is too large, training can overshoot the minimum and fail to converge. If it is too small, training is very slow.
+
+7. Cross-validation
+In k-fold cross-validation the data is divided into k equal parts called folds. The model is trained k times, each time using a different fold as the validation set and the remaining folds for training. The final score is the average of the k results. Cross-validation gives a more reliable estimate of performance than a single split, especially when the dataset is small.
+
+8. Neural networks
+A neural network is made of layers of connected units called neurons. Each neuron computes a weighted sum of its inputs and passes it through an activation function such as ReLU or sigmoid. A network with many hidden layers is called a deep neural network, and training such networks is called deep learning. Backpropagation is the method used to compute the gradients that gradient descent needs.
+
+9. Feature scaling
+Many algorithms work better when the input features are on a similar scale. Normalization rescales values to a fixed range, usually 0 to 1. Standardization rescales values so that they have a mean of 0 and a standard deviation of 1. Scaling is especially important for algorithms that use distances, such as k-nearest neighbours, and for models trained with gradient descent.

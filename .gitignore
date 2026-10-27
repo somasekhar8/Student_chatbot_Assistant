@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+.faiss_index/
+data/
+evaluation_results.json
+.streamlit/secrets.toml
+venv/
